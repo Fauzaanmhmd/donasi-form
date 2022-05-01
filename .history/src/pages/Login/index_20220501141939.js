@@ -93,7 +93,7 @@ const Login = () => {
                                             placeholder="Enter email"
                                             label="Email"
                                             variant="outlined"
-                                            error={meta.error && meta.touched && !donasi && !!setDonasi}
+                                            error={meta.error && meta.touched}
                                             fullWidth
                                             className={classes.textField}
 
@@ -116,7 +116,6 @@ const Login = () => {
                                             placeholder="Masukkan Password Kamu"
                                             label="Password"
                                             variant="outlined"
-                                            error={meta.error && meta.touched && !donasi && !!setDonasi}
                                             fullWidth
                                             className={classes.textField}
                                         />
@@ -144,9 +143,7 @@ const Login = () => {
                                             placeholder="Masukkan Donasi Kamu Kamu"
                                             label="Donasi"
                                             variant="outlined"
-                                            error={meta.error && meta.touched && !donasi && !!setDonasi}
-                                            fullWidth
-                                        />
+                                            fullWidth />
                                         {(meta.error && meta.touched && !donasi && !!setDonasi) && (<Typography className={classes.errorMessage}>{meta.error}</Typography>)}
                                     </Grid>
                                 </Box>
