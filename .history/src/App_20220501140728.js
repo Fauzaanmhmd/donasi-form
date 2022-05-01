@@ -29,6 +29,7 @@ const Content = styled(Box)({
 })
 
 const App = () => {
+  const classes = appStyles();
   return (
     <div>
       <div id='root'>
